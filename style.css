@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+    color: #5C6168;
+
+}
+
+.container {
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 1px 1px 50px rgb(80, 79, 79);
+    display: flex;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 5px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.left {
+    height: inherit;
+    background-color: #E8EAEE;
+}
+
+.left .name {
+    margin: 45px;
+    margin-top: 60px;
+}
+
+.left .name h1 {
+    border: none;
+    padding: 5px;
+}
+
+.left .name h3 {
+    border: none;
+    padding: 5px;
+    font-size: 0.625vw;
+
+}
+
+.education,
+.skills,
+.interests {
+    margin: 45px;
+}
+
+.education .edu1,
+.edu2 {
+    margin-top: 30px;
+}
+
+.education .school,
+.year,
+.desc {
+    margin-top: 10px;
+}
+
+.left ul {
+    margin-top: 25px;
+}
+
+li {
+    margin: 10px 30px;
+}
+
+.left hr {
+    width: 40px;
+    border-bottom: 2px solid #5C6168;
+    color: #5C6168;
+    margin: 10px 0px;
+}
+
+.left .leftContent {
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 10%;
+    /* padding: 20%; */
+}
+
+.left .iconBar {
+    align-items: center;
+}
+
+.left .iconBar i {
+    font-size: 28px;
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+.right .rightContent {
+    margin: 30px 50px;
+}
+
+.right .photo {
+    display: flex;
+}
+
+.right .photo img {
+    width: 162px;
+    height: 162px;
+    margin-top: 40px;
+    border-radius: 100px;
+}
+
+.photo .imgText {
+    margin: 60px 20px;
+}
+
+.photo .imgText P I {
+    margin: 0px 10px;
+}
+
+.photo .imgText p {
+    padding: 10px;
+}
+
+
+.right .content {
+    margin-top: 30px;
+}
+
+.right .experience .companyNameYear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .experience p {
+    margin-top: 8px;
+}
+
+.right .expertise .content .expertiseType {
+    margin: 40px 0px;
+}
+
+.right .expertise .content .expertiseType h3 {
+    margin: 20px 0px;
+}
+
+hr {
+    border-bottom: 1px solid rgb(88, 88, 88);
+    margin-top: 13px;
+    margin-left: -51px;
+    width: 150px;
+}
+
+@media screen and (max-width: 1740px) {
+    .container {
+        box-shadow: 1px 1px 50px rgb(80, 79, 79);
+        display: flex;
+        font-size: 16px;
+    }
+
+    .photo .imgText .linkedin {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1691px) {
+    .container {
+        box-shadow: 1px 1px 50px rgb(80, 79, 79);
+        display: flex;
+        width: 70%;
+    }
+
+    .left .name h3 {
+        border: none;
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1176px) {
+    .container {
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 822px) {
+    .container {
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .photo .imgText {
+        margin: 40px auto;
+    }
+
+    .photo .imgText p {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .photo .imgText p i {
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .container {
+        box-shadow: none;
+        flex-direction: column-reverse;
+    }
+
+    .responsive {
+        margin: 0px;
+        background-color: white;
+    }
+
+    .right .rightContent, .left .leftContent{
+        margin-top: 60px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .left .name{
+        display: none;
+    }
+
+    .photo .imgText {
+        margin: 60px auto;
+    }
+
+    .right hr {
+        width: 40px;
+        border-bottom: 2px solid #5C6168;
+        color: #5C6168;
+        margin: 10px 0px;
+    }
+
+    .photo .imgText p {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .left .name {
+        visibility: unset;
+    }
+
+    .left .iconBar {
+        margin: 0px 250px;
+    }
+
+
+}
+
+@media screen and (max-width:655px) {
+    .photo {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    } 
+
+    .photo img{
+        margin: auto ;
+    }
+    .photo .imgText{
+        margin: 30px 0px ;
+        margin-bottom: 0px;
+    }
+
+    .right .rightContent, .left .leftContent{
+        margin-top: 60px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    
+}
